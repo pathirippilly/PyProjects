@@ -130,3 +130,7 @@ dmypy.json
 
 #Dir level execlude
 .idea
+#file level exclude
+*.ipynb
+#Exceptions on exclude
+!times_job_analysis/src/lib
