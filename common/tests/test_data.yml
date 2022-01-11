@@ -1,0 +1,11 @@
+test_modules:
+  modules:
+    test_utils:
+      test_data:
+        test_data:
+        cases:
+          TestUtils:
+            test_data:
+            tests:
+              test_beautify_str:
+                test_data:
