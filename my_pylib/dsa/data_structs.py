@@ -52,15 +52,14 @@ class LinkedList:
             raise StopIteration
 
     def __reversed__(self):
-        PrevNode = None
-        currNode = self.head
-        while currNode:
-            currNextNode = currNode.next
-            currNode.next = PrevNode
-            PrevNode = currNode
-            currNode = currNextNode
-            if not currNode:
-                self.head = PrevNode
+        prev_node = None
+        curr_node = self.head
+        while curr_node:
+            self.head = curr_node
+            next_node = curr_node.next
+            curr_node.next = prev_node
+            prev_node = curr_node
+            curr_node = next_node
         return self
 
     def insertAtBeginning(self, data):
